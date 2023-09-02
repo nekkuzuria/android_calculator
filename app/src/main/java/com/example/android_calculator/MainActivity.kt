@@ -21,10 +21,10 @@ class MainActivity : AppCompatActivity() {
 
 
     fun allClearAction(view: View) {
-        binding.num1 = ""
-        binding.operator = ""
-        binding.num2 = ""
-        binding.resultNum = ""
+        binding.num1.text = ""
+        binding.operator.text = ""
+        binding.num2.text = ""
+        binding.resultNum.text = ""
     }
 
     fun backspaceAction(view: View) {
@@ -37,10 +37,10 @@ class MainActivity : AppCompatActivity() {
 
     fun numberAction(view: View) {
         if(canAddNum1){
-            binding.num1.append(view.text)
+            binding.num1.append(view.text.toString())
             canAddOperation = true
         } else if(canAddNum2){
-            binding.num2.append(view.text)
+            binding.num2.append(view.text.toString())
             canAddOperation = false
         }
     }
