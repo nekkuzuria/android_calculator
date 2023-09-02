@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/dark_black"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="260dp">
+
+        <TextView
+            android:id="@+id/num1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="25"
+            android:layout_toLeftOf="@id/operator"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:layout_marginTop="100dp"
+            />
+
+        <TextView
+            android:id="@+id/operator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:layout_toLeftOf="@id/num2"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="@color/pink"
+            android:textSize="20sp"
+            android:layout_marginTop="100dp"
+            />
+
+        <TextView
+            android:id="@+id/num2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="25"
+            android:layout_alignParentEnd="true"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:layout_marginTop="100dp"
+            />
+
+
+
+        <TextView
+            android:id="@+id/resultNum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="50"
+            android:layout_below="@id/num2"
+            android:layout_alignParentBottom="true"
+            android:textAlignment="textEnd"
+            android:fontFamily="@font/poppins_bold"
+            android:textColor="@color/white"
+            android:textSize="60sp"
+            />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            style="@style/buttonRow"
+            android:orientation="horizontal">
+
+            <Button
+                style="@style/buttonOperator"
+                android:onClick="allClearAction"
+                android:text="C"
+                />
+
+            <Button
+                style="@style/buttonOperator"
+                android:onClick="backspaceAction"
+                android:text="⌫"
+                />
+
+            <Button
+                style="@style/buttonOperator"
+                android:onClick="operationAction"
+                android:text="%" />
+
+            <Button
+                style="@style/buttonOperator"
+                android:onClick="operationAction"
+                android:text="/" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/buttonRow"
+            android:orientation="horizontal">
+
+            <Button
+                style="@style/buttonNumber"
+                android:onClick="numberAction"
+                android:text="7" />
+
+            <Button
+                style="@style/buttonNumber"
+                android:onClick="numberAction"
+                android:text="8" />
+
+            <Button
+                style="@style/buttonNumber"
+                android:onClick="numberAction"
+                android:text="9" />
+
+            <Button
+                style="@style/buttonOperator"
+                android:onClick="operationAction"
+                android:text="*" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/buttonRow"
+            android:orientation="horizontal">
+
+            <Button
+                style="@style/buttonNumber"
+                android:onClick="numberAction"
+                android:text="4" />
+
+            <Button
+                style="@style/buttonNumber"
+                android:onClick="numberAction"
+                android:text="5" />
+
+            <Button
+                style="@style/buttonNumber"
+                android:onClick="numberAction"
+                android:text="6" />
+
+            <Button
+                style="@style/buttonOperator"
+                android:onClick="operationAction"
+                android:text="-" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/buttonRow"
+            android:orientation="horizontal">
+
+            <Button
+                style="@style/buttonNumber"
+                android:onClick="numberAction"
+                android:text="1" />
+
+            <Button
+                style="@style/buttonNumber"
+                android:onClick="numberAction"
+                android:text="2" />
+
+            <Button
+                style="@style/buttonNumber"
+                android:onClick="numberAction"
+                android:text="3" />
+
+            <Button
+                style="@style/buttonOperator"
+                android:onClick="operationAction"
+                android:text="+" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/buttonRow"
+            android:orientation="horizontal">
+
+            <Button
+                style="@style/buttonOperator"
+                android:onClick="operationAction"
+                android:text="+-" />
+
+            <Button
+                style="@style/buttonNumber"
+                android:onClick="numberAction"
+                android:text="0" />
+
+            <Button
+                style="@style/buttonNumber"
+                android:onClick="numberAction"
+                android:text="." />
+
+            <Button
+                style="@style/buttonResult"
+                android:onClick="equalsAction"
+                android:text="=" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
