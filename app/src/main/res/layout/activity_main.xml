@@ -178,18 +178,13 @@
 
             <Button
                 style="@style/buttonOperator"
-                android:onClick="operationAction"
-                android:text="+-" />
+                android:onClick=""
+                android:text="" />
 
             <Button
                 style="@style/buttonNumber"
                 android:onClick="numberAction"
                 android:text="0" />
-
-            <Button
-                style="@style/buttonNumber"
-                android:onClick="numberAction"
-                android:text="." />
 
             <Button
                 style="@style/buttonResult"
@@ -198,6 +193,7 @@
         </LinearLayout>
 
     </LinearLayout>
+
 
 
 </LinearLayout>
